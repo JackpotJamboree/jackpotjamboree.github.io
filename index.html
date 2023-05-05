@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jackpot Jamboree</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background: url(icon_2.png) repeat;
+			color: #ff5f;
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+		}
+
+		header {
+			padding: 10px;
+			background: rgba(0, 0, 0, 0.5);
+		}
+
+		h1 {
+			margin: 0;
+			font-size: 36px;
+			text-align: center;
+			text-shadow: 2px 2px #000;
+		}
+
+		main {
+			padding: 20px;
+		}
+
+		.buttons {
+			display: flex;
+			justify-content: center;
+			margin right: 20px;
+		}
+
+		button {
+			background: #ff9800;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 7px;
+			font-size: 30px;
+			cursor: pointer;
+			box-shadow: 6px 6px 11px rgba(0, 0, 0, 0.5);
+			transition: background-color 0.5s ease;
+		}
+
+		button:hover {
+			background-color: #f44336;
+		}
+
+		img {
+			display: block;
+			max-width: 100%;
+			margin: 20px auto;
+			box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+		}
+
+		.neon-lines {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			pointer-events: none;
+		}
+
+		.neon-lines:before,
+		.neon-lines:after {
+			content: "";
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			background: url(neon-lines.gif) repeat;
+			opacity: 0.5;
+			z-index: -1;
+			animation: animate-neon-lines 2s linear infinite;
+		}
+
+		.neon-lines:after {
+			animation-delay: 1s;
+		}
+
+		@keyframes animate-neon-lines {
+			from {
+				transform: translateX(0);
+			}
+			to {
+				transform: translateX(-100%);
+			}
+		}
+
+		@media (max-width: 768px) {
+			h1 {
+				font-size: 24px;
+			}
+			button {
+				font-size: 16px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Jackpot Jamboree</h1>
+	</header>
+	<main>
+		<p>Jackpot Jamboree is a unique online game inspired by the popular. With stunning graphics, realistic gameplay, and exciting bonuses, Jackpot Jamboree offers players an unforgettable gaming experience.</p>
+		<div class="buttons">
+			<a href="ib.html"><button>Privacy Policy</button></a>
+<a href="kh.html"><button>Terms & Conditions</button></a>
+		<a href="ug.html"><button>delete</button></a>
+	</div>
+</main>
+<div class="neon-lines"></div>
+</body>
+</html>
